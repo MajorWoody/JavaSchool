@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strings and Arrays</title>
+	<script>
+		function wrangleArray() {
+		var uInput = window.prompt("Enter a String");
+		var message = uInput;
+		document.getElementById("div1").innerHTML = "<p>" + message + "</p>";
+		alert("I will make your string all caps, then sort them in alphabetical order!");
+		var capMes = message.toUpperCase();
+		var sortMes = uInput.split(' ');
+		sortMes.sort();
+		document.getElementById("div2").innerHTML = "<p>" + capMes + "</p>";
+		
+		document.getElementById("div3").innerHTML = "<p>" + sortMes + " </p>";
+		
+		}
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<script>wrangleArray();</script>
+</body>
+</html>
