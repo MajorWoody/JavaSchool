@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner Cycler</title>
+	<script>
+		var banners = ["banner1.jpg", "banner2.jpg", "banner3.jpg"];
+
+		var min = 0;
+		var max = 3;		
+		function ranNum(min, max) {
+			 return Math.floor(Math.random() * (max - min) + min);3
+			 
+		}
+			
+			
+		function run() {
+			setInterval(cycle, 2000);
+		}
+		function cycle() {
+			ranNum(min, max); 
+			var num = ranNum(min, max);
+			document.getElementById("banner").src = banners[num];
+		}
+		
+	</script>
+</head>
+<body onLoad = "run();">
+	<img id="banner" alt="banner" src="banner1.jpg" />
+</body>
+</html>
