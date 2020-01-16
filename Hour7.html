@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p id="demo"></p>
+	<title>Banner Cycler</title>
+    
+	<script>
+		function Cards(suits, faces){ 
+			this.suit = suits;
+			this.face = faces;
+            this.cardDesc = function(){
+            return this.face + " of " + this.suit
+            };
+		}
+	var c1 = new Cards("diamond", "ace");
+    var c2 = new Cards("spades", "2");
+    var c3 = new Cards("heart", "8");
+    
+    document.getElementById("demo").innerHTML =
+"The card is " + c1.cardDesc(); 
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
